@@ -3,3 +3,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+  @layer utilities {
+    .text-shadow-red {
+      text-shadow: 4px 2px #800020;
+    }
+  }
+  
