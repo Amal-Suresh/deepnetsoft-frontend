@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import MenuHero from '../components/MenuHero'
 import MenuCategories from '../components/MenuCategories'
 import Footer from '../components/Footer'
+import Contact from '../components/Contact'
 
 const Menu = () => {
     return (
@@ -10,6 +11,7 @@ const Menu = () => {
             <Navbar />
             <MenuHero/>
             <MenuCategories/>
+            <Contact/>
             <Footer/>
         </div>
     )

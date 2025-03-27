@@ -1,5 +1,3 @@
-import React from 'react'
-
 const MenuHero = () => {
     return (
         <div className='relative flex justify-center items-center'>
