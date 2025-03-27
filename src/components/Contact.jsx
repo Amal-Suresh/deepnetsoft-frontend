@@ -10,8 +10,8 @@ const Contact = () => {
                 <p className='text-[#857878] flex items-center gap-3'><span><img src="/assets/mailbox-icon.svg" alt="" /></span> info@deepnetsoft.com</p>
             </div>
 
-            <div className="md:order-2 order-1  p-4 border rounded-md flex items-center flex-col ">
-                <img className='absolute w-[74px] md:w-[86px] z-20 -bottom-10 md:bottom-6 md:left-[46%]' src="/assets/logoblack.svg" alt="logo" />
+            <div className="md:order-2 order-1  p-4 border rounded-md flex items-center flex-col relative">
+                <img className='absolute w-[74px] md:w-[86px] z-20  top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ' src="/assets/logoblack.svg" alt="logo" />
 
                 <div className='font-normal text-[35px] mt-4 md:mt-8 mb-1'>
                     <h2 className='text-[#0796EF]'>DEEP <span className='text-white'>NET</span>  <span className='text-[#857878]'>SOFT</span></h2>
