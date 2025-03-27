@@ -5,9 +5,10 @@ export default {
       fontFamily: {
         oswald: ["Oswald", "sans-serif"],
         kelly: ["Kelly Slab", "cursive"],
+        lato: ["Lato", "sans-serif"], 
       },
       textShadow: {
-        red: "5px 5px #800020", 
+        red: "5px 5px #800020",
       },
     },
   },
