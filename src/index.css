@@ -14,7 +14,12 @@
 
   @layer utilities {
     .text-shadow-red {
-      text-shadow: 4px 2px #800020;
+      text-shadow: 5px 4px #800020;
     }
+
+    .text-shadow-red2 {
+      text-shadow: 3px 1px #800020;
+    }
+
   }
   
