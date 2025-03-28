@@ -1,54 +1,79 @@
-# React + TypeScript + Vite
+# Machine Test - Deepnetsoft
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Demo
+[Click here to view the live project](https://deepnetsoft-frontend-nu.vercel.app/)
 
-Currently, two official plugins are available:
+## Admin Login
+- **URL**: [Admin Login](https://deepnetsoft-frontend-nu.vercel.app/admin)
+- **Credentials**: Contact the administrator for login details.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
+This is a machine test project assigned by Deepnetsoft. The project consists of an admin login system, menu category management, and a protected admin dashboard.
 
-## Expanding the ESLint configuration
+## Technologies Used
+- **Frontend**: React, Vite, React Router, Tailwind CSS
+- **Backend**: Node.js, Express.js, MongoDB
+- **Hosting**: 
+  - Frontend: Vercel
+  - Backend: Render
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
+- Admin authentication with protected routes
+- Menu category management (Create, Update, Delete)
+- Menu management under categories (Create, Update, Delete)
+- Pagination and loading indicators for menu listing (User & Admin side)
+- Responsive design
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Setup Instructions
+### Frontend
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Amal-Suresh/deepnetsoft-frontend.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd frontend
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Start the development server:
+   ```sh
+   npm run dev
+   ```
+5. Build for production:
+   ```sh
+   npm run build
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Backend
+1. Clone the backend repository:
+   ```sh
+   git clone https://github.com/Amal-Suresh/deepnetsoft-backend
+   ```
+2. Navigate to the backend directory:
+   ```sh
+   cd backend
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Create a `.env` file with the necessary environment variables:
+   ```sh
+   PORT=5000
+   MONGO_URI=<your_mongodb_connection_string>
+   ```
+5. Start the backend server:
+   ```sh
+   npm start
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Deployment
+- **Frontend**: Hosted on Vercel
+- **Backend**: Hosted on Render
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Author
+Developed by Amal Suresh
+
